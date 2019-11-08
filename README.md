@@ -1,3 +1,9 @@
+Dylan Sun
+github id: dylansun18
+
+Javadoc: https://ucsb-cs56-f19.github.io/lab07-dylansun18/
+
+
 A simple Spring Boot webapp using:
 * Thymeleaf templating
 * Pulling in Bootstrap from CDN.
