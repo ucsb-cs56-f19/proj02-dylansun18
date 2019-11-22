@@ -31,12 +31,12 @@ public class AuthControllerAdvice {
 
         List<AppUser> users = userRepository.findByUid(uid);
 
-        //if (users.size()==0) {
-        //    AppUser u = new AppUser();
-        //    u.setUid(uid);
-        //    u.setLogin(token2login(token));
-        //    userRepository.save(u);
-        //}
+        if (users.size()==0) {
+            AppUser u = new AppUser();
+            u.setUid(uid);
+            u.setLogin(token2login(token));
+            userRepository.save(u);
+        }
 
         return uid;
     }
