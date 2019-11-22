@@ -7,5 +7,5 @@ import hello.entities.AppUser;
 
 @Repository
 public interface UserRepository extends CrudRepository<AppUser, Long> {
-   List<AppUser> findByUid(String uid);
+   List<AppUser> findByUidIn(String uid);
 }

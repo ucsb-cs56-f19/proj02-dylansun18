@@ -7,7 +7,7 @@ import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import java.util.List;
 import hello.entities.AppUser;
-import hello.repositories.*;
+import hello.repositories.UserRepository;
 
 @ControllerAdvice
 public class AuthControllerAdvice {
@@ -29,7 +29,7 @@ public class AuthControllerAdvice {
 
         String uid = token.getPrincipal().getAttributes().get("id").toString();
 
-        List<AppUser> users = userRepository.findByUid(uid);
+        List<AppUser> users = userRepository.findByUidIn(uid);
 
         if (users.size()==0) {
             AppUser u = new AppUser();
