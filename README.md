@@ -1,9 +1,11 @@
 Dylan Sun
 github id: dylansun18
 
-Javadoc: https://ucsb-cs56-f19.github.io/lab07-dylansun18/
-Heroku: https://cs56-f19-lab07-dylansun18.herokuapp.com/
-Travis-CI: https://travis-ci.org/ucsb-cs56-f19/lab07-dylansun18/builds/615362520?utm_source=github_status&utm_medium=notification
+Javadoc: https://ucsb-cs56-f19.github.io/proj01-dylansun18/
+
+Heroku: https://cs56-f19-proj01-dylansun18.herokuapp.com/
+
+Travis-CI: https://travis-ci.org/ucsb-cs56-f19/proj01-dylansun18/builds/616989902?utm_source=github_status&utm_medium=notification
 
 
 A simple Spring Boot webapp using:
