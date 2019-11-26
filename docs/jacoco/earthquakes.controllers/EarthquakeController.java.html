@@ -38,7 +38,7 @@ import earthquakes.searches.EqSearch;
 
 <span class="nc" id="L39">        model.addAttribute(&quot;eqSearch&quot;, eqSearch);</span>
         // TODO: Actually do the search here and add results to the model
-<span class="nc" id="L41">        String json = e.getJSON(eqSearch.getDistance(), eqSearch.getMinmag());</span>
+<span class="nc" id="L41">        String json = e.getJSON(eqSearch.getDistance(), eqSearch.getMinmag(), eqSearch.getLat(), eqSearch.getLon());</span>
 <span class="nc" id="L42">        model.addAttribute(&quot;json&quot;, json);</span>
 <span class="nc" id="L43">        FeatureCollection featureCollection = FeatureCollection.fromJSON(json);</span>
 <span class="nc" id="L44">        model.addAttribute(&quot;featureCollection&quot;,featureCollection);</span>
