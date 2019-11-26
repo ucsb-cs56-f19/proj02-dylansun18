@@ -14,6 +14,8 @@ import java.util.HashMap;
 import com.nimbusds.oauth2.sdk.client.ClientReadRequest;
 import earthquakes.searches.LocSearch;
 import earthquakes.services.*;
+import earthquakes.osm.*;
+import java.util.List;
 
 
 @Controller
@@ -35,6 +37,8 @@ public class LocationsController {
         model.addAttribute("locSearch", locSearch);
         String json = e.getJSON(locSearch.getLocation());
         model.addAttribute("json", json);
+        List<Place> place = Place.listFromJSON(json);
+        model.addAttribute("place", place);
         return "locations/results";
     }
 }
