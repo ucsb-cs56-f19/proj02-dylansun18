@@ -1,4 +1,4 @@
-package hello.controllers;
+package earthquakes.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 import com.nimbusds.oauth2.sdk.client.ClientReadRequest;
-import hello.geojson.FeatureCollection;
+import earthquakes.geojson.FeatureCollection;
 
 
 @Controller
